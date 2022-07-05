@@ -1,7 +1,7 @@
 import React from "react";
 import ThreeDimage from "./ThreeDimage";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+
 const HeroHeader = () => {
   return (
     <>
@@ -17,7 +17,6 @@ const HeroHeader = () => {
           </p>
         </DetailBox>
       </RelativeDiv>
-      <Navbar />
     </>
   );
 };

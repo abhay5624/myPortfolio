@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import {
   faHome,
   faInfoCircle,
@@ -13,20 +14,28 @@ const Navbar = () => {
   return (
     <Navigation>
       <div>
-        <FontAwesomeIcon icon={faInfoCircle} />
-        <h4>About</h4>
+        <Link to="/about">
+          <FontAwesomeIcon icon={faInfoCircle} />
+          <h4>About</h4>
+        </Link>
       </div>
       <div>
-        <FontAwesomeIcon icon={faHammer} />
-        <h4>Skills</h4>
+        <Link to="/skills">
+          <FontAwesomeIcon icon={faHammer} />
+          <h4>Skills</h4>
+        </Link>
       </div>
       <div>
-        <FontAwesomeIcon icon={faComment} />
-        <h4>Contact</h4>
+        <Link to="/contact">
+          <FontAwesomeIcon icon={faComment} />
+          <h4>Contact</h4>
+        </Link>
       </div>
       <div>
-        <FontAwesomeIcon icon={faFutbol} />
-        <h4>Hobbies</h4>
+        <Link to="hobbies">
+          <FontAwesomeIcon icon={faFutbol} />
+          <h4>Hobbies</h4>
+        </Link>
       </div>
     </Navigation>
   );
@@ -42,6 +51,10 @@ const Navigation = styled.nav`
   right: 0;
   bottom: 0;
   z-index: 99;
+  a {
+    color: white;
+    text-decoration: none;
+  }
   h4 {
     margin: 0;
     cursor: pointer;
