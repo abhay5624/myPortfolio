@@ -12,9 +12,8 @@ const HeroHeader = () => {
         <DetailBox>
           <h2>Web Developer</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, ut at
-            enim similique molestiae cupiditate nobis veniam expedita soluta
-            obcaecati?
+            Hello , Its Abhay your front-end Developer. I develop your business
+            and personal web. Descover about my work and my work Here!!
           </p>
         </DetailBox>
       </RelativeDiv>

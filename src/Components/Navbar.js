@@ -6,15 +6,12 @@ import {
   faInfoCircle,
   faHammer,
   faComment,
+  faFutbol,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
     <Navigation>
-      <div>
-        <FontAwesomeIcon icon={faHome} />
-        <h4>Home</h4>
-      </div>
       <div>
         <FontAwesomeIcon icon={faInfoCircle} />
         <h4>About</h4>
@@ -26,6 +23,10 @@ const Navbar = () => {
       <div>
         <FontAwesomeIcon icon={faComment} />
         <h4>Contact</h4>
+      </div>
+      <div>
+        <FontAwesomeIcon icon={faFutbol} />
+        <h4>Hobbies</h4>
       </div>
     </Navigation>
   );
